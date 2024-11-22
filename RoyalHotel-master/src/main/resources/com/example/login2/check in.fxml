@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login2.Booking_Form">
+    <children>
+        <AnchorPane prefHeight="607.0" prefWidth="833.0" style="-fx-background-color: #2D3347;">
+            <children>
+                <Button fx:id="Back" layoutX="35.0" layoutY="540.0" mnemonicParsing="false" onAction="#Back_click" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: red; -fx-border-style: dashed;" text="Back" textFill="#f7f4f4">
+                    <font>
+                        <Font name="Times New Roman" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="confirm" layoutX="230.0" layoutY="540.0" mnemonicParsing="false" onAction="#confirm_click" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #2196f3; -fx-border-style: dashed;" text="confirm" textFill="#faf6f6">
+                    <font>
+                        <Font name="Times New Roman" size="21.0" />
+                    </font>
+                </Button>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2196f3" height="32.0" layoutX="142.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+                <GridPane layoutX="24.0" prefHeight="484.0" prefWidth="362.0" style="-fx-border-color: #2196f3; -fx-border-width: 5;" AnchorPane.topAnchor="29.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.20001220703125" minWidth="10.0" prefWidth="99.2000045776367" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.79999542236328" minWidth="10.0" prefWidth="244.79999542236328" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="101.60001220703126" minHeight="10.0" prefHeight="36.000003051757815" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="268.59999923706056" minHeight="0.0" prefHeight="57.40001220703125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="486.40000305175784" minHeight="0.0" prefHeight="60.79998779296875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="0.0" prefHeight="56.399987792968744" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="10.0" prefHeight="58.19998779296873" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="10.0" prefHeight="50.39997558593751" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="10.0" prefHeight="56.599993896484364" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="10.0" prefHeight="52.600006103515625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="488.8000213623047" minHeight="10.0" prefHeight="54.199975585937466" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="144.0" text="Name" textFill="WHITE" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Rage Italic" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="110.0" text="Nationality" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Rage Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="110.0" text="National ID" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Rage Italic" size="21.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="110.0" text="Address" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Rage Italic" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="110.0" text="City" textFill="#fcfcfc" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Rage Italic" size="27.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="110.0" text="Phone" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Rage Italic" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="110.0" text="Email" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="7">
+                            <font>
+                                <Font name="Rage Italic" size="26.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="First and Last name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="nationalityFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="Nationality" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="IDFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="National ID/Passport Number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="addressFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="cityFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="City" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="phoneFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="Phone Number" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="emailFld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="224.0" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                    </children>
+                </GridPane>
+                <Label layoutX="151.0" layoutY="19.0" text="Customer Data" textFill="#faf6f6">
+                    <font>
+                        <Font name="Times New Roman" size="18.0" />
+                    </font>
+                </Label>
+            <AnchorPane layoutX="445.0" layoutY="29.0" prefHeight="336.0" prefWidth="362.0" style="-fx-border-color: #2196f3; -fx-border-width: 5;">
+               <children>
+                  <TextField fx:id="roomIDFld" layoutX="128.0" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="212.0" promptText="Room ID" />
+                  <TextField fx:id="numofDaysFld" layoutX="122.0" layoutY="161.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="212.0" promptText="Number of Days" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-22.0" layoutY="225.0" prefHeight="35.0" prefWidth="144.0" text="Room ID" textFill="WHITE">
+                     <font>
+                        <Font name="Rage Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-30.0" layoutY="159.0" prefHeight="35.0" prefWidth="144.0" text="Days" textFill="WHITE">
+                     <font>
+                        <Font name="Rage Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" layoutY="87.0" prefHeight="37.0" prefWidth="134.0" text="Room Type" textFill="WHITE">
+                     <font>
+                        <Font name="Rage Italic" size="26.0" />
+                     </font>
+                  </Label>
+                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2196f3" height="32.0" layoutX="118.0" layoutY="-12.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+                      <Label layoutX="142.0" layoutY="-6.0" text="Room Info" textFill="#faf7f7">
+                          <font>
+                              <Font name="Times New Roman" size="18.0" />
+                          </font>
+                      </Label>
+                  <MenuButton layoutX="137.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="171.0" text="Choose">
+                    <items>
+                      <MenuItem fx:id="vip1" mnemonicParsing="false" onAction="#VIP_choose" onMenuValidation="#VIP_choose" text="VIP" />
+                      <MenuItem fx:id="normal1" mnemonicParsing="false" onAction="#normal_choose" onMenuValidation="#normal_choose" text="Normal" />
+                        <MenuItem fx:id="economy1" mnemonicParsing="false" onAction="#economy_choose" onMenuValidation="#economy_choose" text="Economy" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

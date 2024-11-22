@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="409.0" prefWidth="670.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login2.Checkout_Form">
+   <children>
+      <Label layoutX="60.0" layoutY="24.0" prefHeight="58.0" prefWidth="197.0" text="Room Number" textFill="WHITE">
+         <font>
+            <Font name="Rage Italic" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomID_textfield" layoutX="275.0" layoutY="34.0" prefHeight="39.0" prefWidth="197.0" promptText="room ID" />
+      <Button fx:id="checkoutbutton" layoutX="305.0" layoutY="101.0" mnemonicParsing="false" onAction="#checkoutbutton_click" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: #2196f3;" text="Show receipt" textFill="#ffe3e3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="154.0" prefHeight="27.0" prefWidth="154.0" text="Room Type" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomtype_label" layoutX="208.0" layoutY="154.0" prefHeight="18.0" prefWidth="182.0" text=" " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomtype_price" layoutX="403.0" layoutY="154.0" prefHeight="18.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="211.0" prefHeight="27.0" prefWidth="163.0" text="Food Package" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="food_label" layoutX="209.0" layoutY="211.0" prefHeight="18.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="food_price" layoutX="403.0" layoutY="211.0" prefHeight="18.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="268.0" prefHeight="27.0" prefWidth="131.0" text="Day of stay" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="days_number" layoutX="312.0" layoutY="268.0" prefHeight="18.0" prefWidth="182.0" text=" " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="323.0" prefHeight="42.0" prefWidth="96.0" text="Total" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" layoutX="452.0" layoutY="332.0" prefHeight="27.0" prefWidth="218.0" text=" " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="500.0" layoutY="376.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: red;" text="Back to home screen" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
